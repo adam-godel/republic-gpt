@@ -1,9 +1,7 @@
-import os
 import time
 import tokenizer as tk
 
 text = open("input.txt", "r", encoding="utf-8").read()
-os.makedirs("models", exist_ok=True)
 
 t0 = time.time()
 tokenizer = tk.Tokenizer()
