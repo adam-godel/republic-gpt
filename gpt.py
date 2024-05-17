@@ -28,7 +28,7 @@ decode = lambda l: ''.join([itos[i] for i in l])
 '''
 
 tokenizer = tk.Tokenizer()
-tokenizer.load("models/regex.model")
+tokenizer.load("tokens.model")
 vocab_size = len(tokenizer.vocab)
 
 data = torch.tensor(tokenizer.encode(text), dtype=torch.long)

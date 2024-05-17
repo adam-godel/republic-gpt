@@ -8,7 +8,7 @@ os.makedirs("models", exist_ok=True)
 t0 = time.time()
 tokenizer = tk.Tokenizer()
 tokenizer.train(text, 768, verbose=True)
-tokenizer.save('tokenizer')
+tokenizer.save('tokens')
 t1 = time.time()
 
 print(f"Training took {t1 - t0:.2f} seconds")
